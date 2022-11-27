@@ -14,7 +14,7 @@
 <meta property="og:description" content="1. 题面描述题目链接 给出 $n$ 棵树的高度。 你可以进行一次操作：把某棵树增高 $x$，代价为 $x^2$（注意：不能将一棵树的高度减少）。 在操作完之后，一个状态的代价定义为相邻两树高度差的和 $\times c$。 求最小代价。 $n\le 10^5$，$a[i],x\le 100$，其中 $a[i]$ 表示第 $i$ 棵树的高度。 2. 分析考虑 DP。 设 $f[i][j]$ 表示操">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-11-27T09:30:42.000Z">
-<meta property="article:modified_time" content="2022-11-27T09:50:42.402Z">
+<meta property="article:modified_time" content="2022-11-27T15:10:42.995Z">
 <meta property="article:author" content="XeRnHe">
 <meta property="article:tag" content="题解">
 <meta property="article:tag" content="动态规划">
@@ -173,9 +173,9 @@
 <p>时间复杂度 $O(n\times max(a[i])^2)$</p>
 <p>考虑优化。</p>
 <p>先把绝对值拆开。于是状态转移方程：</p>
-<p>$f[i][j]=<br>\begin{cases}<br>min_{k\ge a[i-1]}\{f[i-1][k]+c\times (j-k)\}+(j-a[i])^2,<del>j\ge k\\<br>min_{k\ge a[i-1]}\{f[i-1][k]+c\times (k-j)\}+(j-a[i])^2,</del>j&lt;k\\<br>\end{cases},~~j\ge a[i]$</p>
+<p>$f[i][j]=<br>\begin{cases}<br>min_{k\ge a[i-1]}\{f[i-1][k]+c\times (j-k)\}+(j-a[i])^2,~j\ge k\\<br>min_{k\ge a[i-1]}\{f[i-1][k]+c\times (k-j)\}+(j-a[i])^2,~j&lt;k\\<br>\end{cases},~~j\ge a[i]$</p>
 <p>整理，得：</p>
-<p>$f[i][j]=<br>\begin{cases}<br>min_{k\ge a[i-1]}\{f[i-1][k]-c\times k)\}+c\times j+(j-a_i)^2,<del>j\ge k\\<br>min_{k\ge a[i-1]}\{f[i-1][k]+c\times k)\}-c\times j+(j-a_i)^2,</del>j&lt;k\\<br>\end{cases},~~j\ge a[i]$</p>
+<p>$f[i][j]=<br>\begin{cases}<br>min_{k\ge a[i-1]}\{f[i-1][k]-c\times k)\}+c\times j+(j-a_i)^2,~j\ge k\\<br>min_{k\ge a[i-1]}\{f[i-1][k]+c\times k)\}-c\times j+(j-a_i)^2,~j&lt;k\\<br>\end{cases},~~j\ge a[i]$</p>
 <p> 因为两个式子条件不一样，于是考虑分别处理，首先观察第一个式子：</p>
 <p>$f[i][j]=min_{k\ge a[i-1]}\{f[i-1][k]-c\times k)\}+c\times j+(j-a_i)^2,~~j\ge k~\&amp;\&amp;~j\ge a[i]$</p>
 <p>发现 $k$ 的取值范围随着 $j$ 的递增而增大，并且左端点固定，于是考虑在转移时使用一个变量来维护合法的 $k$ 的最大值。</p>

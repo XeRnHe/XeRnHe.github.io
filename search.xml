@@ -4,6 +4,48 @@
   
     
     <entry>
+      <title>Sublime text 进阶操作</title>
+      <link href="/2022/12/02/Sublime-text-%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/"/>
+      <url>/2022/12/02/Sublime-text-%E8%BF%9B%E9%98%B6%E6%93%8D%E4%BD%9C/</url>
+      
+        <content type="html"><![CDATA[<h2 id="0-前言"><a href="#0-前言" class="headerlink" title="0. 前言"></a>0. 前言</h2><p>相信 Sublime Text 的安装对于读者来说不算难题，所以本文只介绍 Sublime Text 中读者可能用到的几个功能。</p><h2 id="1-缺省源"><a href="#1-缺省源" class="headerlink" title="1. 缺省源"></a>1. 缺省源</h2><h3 id="1-0-前言"><a href="#1-0-前言" class="headerlink" title="1-0. 前言"></a>1-0. 前言</h3><p>众所周知，Sublime Text 是没有代码缺省源功能的，但天无绝人之路，这里介绍一种效果相近的方法：</p><p><strong>Sublime Snippets</strong></p><p>Snippets，意为片段。这个功能可以替你插入一些设定好的文本。</p><h3 id="1-1-片段文件"><a href="#1-1-片段文件" class="headerlink" title="1-1. 片段文件"></a>1-1. 片段文件</h3><p>在 Sublime Text 中选择 <code>Tools -&gt; Developer -&gt; New Snippet...</code> 创建片段文件。</p><p>在创建好片段文件之后，发现 Sublime Text 为你提供了一个框架：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;snippet&gt;</span><br><span class="line">&lt;content&gt;&lt;![CDATA[</span><br><span class="line">Hello, $&#123;1:this&#125; is a $&#123;2:snippet&#125;.</span><br><span class="line">]]&gt;&lt;/content&gt;</span><br><span class="line">&lt;!-- Optional: Set a tabTrigger to define how to trigger the snippet --&gt;</span><br><span class="line">&lt;!-- &lt;tabTrigger&gt;hello&lt;/tabTrigger&gt; --&gt;</span><br><span class="line">&lt;!-- Optional: Set a scope to limit where the snippet will trigger --&gt;</span><br><span class="line">&lt;!-- &lt;scope&gt;source.python&lt;/scope&gt; --&gt;</span><br><span class="line">&lt;/snippet&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>说明我们需要更改的部分：</p><ul><li><p>在 <code>![CDATA]</code> 中，填充我们希望插入的文本；</p></li><li><p>在带有 <code>&lt;tabTrigger&gt;</code> 的一行，我们需要将该行的代码改为这样的形式：</p><p>  <code>&lt;tabTrigger&gt;hello&lt;/tabTrigger&gt;</code></p><p>  即将两边的符号删掉，并在两个 <code>&lt;tabTrigger&gt;</code> 之间填入你想设置的触发命令，这里以 <code>hello</code> 为例。</p><p>  当你在编写代码时输入了完整的触发命令并且按下 <code>Tab</code> 键时，编辑器会将触发命令替换为我们在上文中所设置的文本。</p></li><li><p>在带有 <code>&lt;scope&gt;</code> 的一行，我们需要将该行的代码改为这样的形式：</p><p>  <code>&lt;scope&gt;source.python&lt;/scope&gt;</code></p><p>  并在两个 <code>&lt;scope&gt;</code> 之间填入你希望这个片段生效的范围，这里以 <code>source.python</code> 为例。</p><p>  至于一个文件的范围名称，可以通过在该文件中选择 <code>Tools -&gt; Developer -&gt; Show Scope Name</code> 以获得。</p></li></ul><p>至此，我们完成了对默认框架的更改，这里给出我的一个 C++ 片段文件供参考：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;snippet&gt;</span><br><span class="line">&lt;content&gt;&lt;![CDATA[</span><br><span class="line">#include &lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">typedef long long ll;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);</span><br><span class="line">return 0;</span><br><span class="line">&#125;</span><br><span class="line">]]&gt;&lt;/content&gt;</span><br><span class="line">&lt;!-- Optional: Set a tabTrigger to define how to trigger the snippet --&gt;</span><br><span class="line">&lt;tabTrigger&gt;ds&lt;/tabTrigger&gt;</span><br><span class="line">&lt;!-- Optional: Set a scope to limit where the snippet will trigger --&gt;</span><br><span class="line">&lt;scope&gt;source.c++&lt;/scope&gt;</span><br><span class="line">&lt;/snippet&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>保存文件，至此完成了一个片段文件的编辑。文件名字可以任意设置。这里建议保存在用户配置文件夹，即默认位置。</p><h3 id="1-2-使用"><a href="#1-2-使用" class="headerlink" title="1-2. 使用"></a>1-2. 使用</h3><p>在编写代码时输入上文设置的触发命令并单击 <code>Tab</code> 键即可。</p><h2 id="2-快捷键"><a href="#2-快捷键" class="headerlink" title="2. 快捷键"></a>2. 快捷键</h2><h3 id="2-0-前言"><a href="#2-0-前言" class="headerlink" title="2-0. 前言"></a>2-0. 前言</h3><p>本文不对 Sublime Text 的所有快捷键进行介绍，而是仅介绍作者会经常使用的一些快捷键。</p><h3 id="2-1-窗口分屏"><a href="#2-1-窗口分屏" class="headerlink" title="2-1. 窗口分屏"></a>2-1. 窗口分屏</h3><p><code>Alt+Shift+1</code> 将窗口分为 $1$ 屏，即还原为默认单窗口。</p><p><code>Alt+Shift+2</code> 将窗口左右分为 $2$ 屏。</p><p><code>Alt+Shift+3</code> 将窗口左右分为 $3$ 屏，可以通过更改快捷键设置以实现左部分 $1$ 屏，右部分上下各 $1$ 屏的分屏方式：</p><p>选择 <code>Preferences -&gt; Key Bindings</code> 以打开快捷键配置文件。</p><p>将右屏代码替换为左屏代码（删除右屏原有代码，将左屏代码全选并粘贴入右屏）。</p><p>使用以下代码替换右屏中第 $671$ 行到第 $680$ 行的所有代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;keys&quot;: [&quot;alt+shift+3&quot;],</span><br><span class="line">&quot;command&quot;: &quot;set_layout&quot;,</span><br><span class="line">&quot;args&quot;:</span><br><span class="line">&#123;</span><br><span class="line">&quot;cols&quot;: [0.0, 0.5, 1.0],</span><br><span class="line">&quot;rows&quot;: [0.0, 0.5, 1.0],</span><br><span class="line">&quot;cells&quot;: [[0, 0, 1, 2], [1, 0, 2, 1], [1, 1, 2, 2]]</span><br><span class="line">&#125;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure><p>保存文件，至此更改完成了 <code>Alt+Shift+3</code> 的功能。</p><h3 id="2-2-文本编辑"><a href="#2-2-文本编辑" class="headerlink" title="2-2. 文本编辑"></a>2-2. 文本编辑</h3><h4 id="2-2-1-变量名修改"><a href="#2-2-1-变量名修改" class="headerlink" title="2-2-1. 变量名修改"></a>2-2-1. 变量名修改</h4><p><code>Ctrl+D</code> 选中光标处文本，继续操作会选中下一个相同的文本。</p><p>或者通过 <code>Alt+F3</code> 选中代码中所有与当前所选择的文本相同的文本。</p><p>选中所有希望修改的文本后开始修改即可，编辑器会同时更改所有选中的文本。</p><h4 id="2-2-2-括号中选择"><a href="#2-2-2-括号中选择" class="headerlink" title="2-2-2. 括号中选择"></a>2-2-2. 括号中选择</h4><p><code>Ctrl+Shfit+M</code> 选择光标所在括号中的内容，继续操作向外层继续选中。</p><h4 id="2-2-3-插入新行"><a href="#2-2-3-插入新行" class="headerlink" title="2-2-3. 插入新行"></a>2-2-3. 插入新行</h4><p><code>Ctrl+G</code> 打开搜索框后输入数字以跳转到相应行。</p><p><code>Ctrl+Enter</code> 在当前行的下一行插入新行。</p><p>以上即为作者目前使用 Sublime Text 编辑器所使用的所有技巧。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 工具 </tag>
+            
+            <tag> Sublime-text </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>KMP 算法学习笔记</title>
+      <link href="/2022/11/30/KMP-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <url>/2022/11/30/KMP-%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="KMP"><a href="#KMP" class="headerlink" title="KMP"></a>KMP</h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 学习笔记 </tag>
+            
+            <tag> KMP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>哈希算法学习笔记</title>
       <link href="/2022/11/28/%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
       <url>/2022/11/28/%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>

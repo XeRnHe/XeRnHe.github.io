@@ -17,7 +17,7 @@ jobs:
     env:
       REPO_URL: "XeRnHe/XeRnHe.github.io"  # 远程仓库的 URL
       BUILD_PATH: ".vitepress/dist"  # 构建输出路径
-      CUSTOM_DOMAIN: "www.xernhe.com"  # 自定义域名
+      CUSTOM_DOMAIN: "blog.xernhe.com"  # 自定义域名
 
     steps:
       - name: Set up Node.js

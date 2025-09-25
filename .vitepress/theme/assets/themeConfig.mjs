@@ -118,6 +118,7 @@ export const themeConfig = {
         { text: "全部标签", link: "/pages/tags", icon: "hashtag" },
       ],
     },
+    /*
     {
       text: "专栏",
       items: [
@@ -126,6 +127,7 @@ export const themeConfig = {
         { text: "效率工具", link: "/pages/tools", icon: "tools" },
       ],
     },
+    */
     {
       text: "友链",
       items: [

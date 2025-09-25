@@ -3,27 +3,27 @@ export const themeConfig = {
   // 站点信息
   siteMeta: {
     // 站点标题
-    title: "Curve",
+    title: "XeRnHe's Blog",
     // 站点描述
-    description: "Hello World",
+    description: "分享一些想法",
     // 站点logo
     logo: "/images/logo/logo.webp",
     // 站点地址
-    site: "https://blog.imsyy.top",
+    site: "https://blog.xernhe.com",
     // 语言
     lang: "zh-CN",
     // 作者
     author: {
-      name: "Admin",
+      name: "XeRnHe",
       cover: "/images/logo/logo.webp",
-      email: "114514@gmail.com",
-      link: "https://www.imsyy.top",
+      email: "xernhe@163.com",
+      link: "https://blog.xernhe.com",
     },
   },
   // 备案信息
   icp: "萌ICP备114514号",
   // 建站日期
-  since: "2020-07-28",
+  since: "2025-09-25",
   // 每页文章数据
   postSize: 8,
   // inject
@@ -155,7 +155,7 @@ export const themeConfig = {
         {
           icon: "/images/logo/logo.webp",
           name: "博客镜像站",
-          url: "https://blog-backup.imsyy.top/",
+          url: "/",
         },
       ],
     },

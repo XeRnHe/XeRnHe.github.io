@@ -313,7 +313,7 @@ export const themeConfig = {
         ],
       },
       {
-        text: "服务",
+        text: "友链",
         items: [
           { text: "站点状态", link: "https://status.imsyy.top/", newTab: true },
           { text: "一个导航", link: "https://nav.imsyy.top/", newTab: true },

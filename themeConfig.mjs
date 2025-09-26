@@ -162,25 +162,31 @@ export const themeConfig = {
       ],
     },
     {
-      name: "服务",
+      name: "学习工具",
       list: [
         {
           icon: "https://pic.efefee.cn/uploads/2024/04/08/6613465358077.png",
-          name: "起始页",
-          url: "https://nav.imsyy.top/",
+          name: "语雀通知",
+          url: "https://pdofpkuschool.yuque.com/abldpf/vn44mp",
         },
         {
           icon: "https://pic.efefee.cn/uploads/2024/04/08/661346d418ad7.png",
-          name: "今日热榜",
-          url: "https://hot.imsyy.top/",
+          name: "新能源平台",
+          url: "https://bdfz.xnykcxt.com:5002/stu/",
         },
         {
           icon: "https://pic.efefee.cn/uploads/2024/04/08/66134722586fa.png",
-          name: "站点监测",
-          url: "https://status.imsyy.top/",
+          name: "希悦校园",
+          url: "https://chalk-c3.seiue.com",
+        },
+        {
+          icon: "https://pic.efefee.cn/uploads/2024/04/08/66134722586fa.png",
+          name: "SubQuiz",
+          url: "https://quiz.bdfzscc.com",
         },
       ],
     },
+    /*
     {
       name: "项目",
       list: [
@@ -216,6 +222,7 @@ export const themeConfig = {
         },
       ],
     },
+    */
   ],
   // 封面配置
   cover: {

@@ -1,6 +1,7 @@
 // 链接数据
 const linkData = [
   // 推荐数据
+  /*
   {
     type: "rec",
     typeName: "推荐",
@@ -44,17 +45,18 @@ const linkData = [
       },
     ],
   },
+  */
   // 小伙伴们
   {
     type: "friends",
-    typeName: "小伙伴们",
-    typeDesc: "我们在一起，共同进步",
+    typeName: "传说中的大佬",
+    typeDesc: "Orz",
     typeList: [
       {
-        name: "無名小栈",
+        name: "LZRAY·主站",
         avatar: "https://pic.efefee.cn/uploads/2024/02/02/65bc526a940e3.png",
-        desc: "分享技术与科技生活",
-        url: "https://blog.imsyy.top/",
+        desc: "一站式集结 LZRAY 的实验项目与独立工具",
+        url: "https://www.lzray.com",
       },
     ],
   },

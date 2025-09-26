@@ -146,7 +146,7 @@ export const themeConfig = {
   ],
   // 导航栏菜单 - 左侧
   navMore: [
-    {
+    /*{
       name: "博客",
       list: [
         {
@@ -160,7 +160,7 @@ export const themeConfig = {
           url: "/",
         },
       ],
-    },
+    },*/
     {
       name: "学习工具",
       list: [

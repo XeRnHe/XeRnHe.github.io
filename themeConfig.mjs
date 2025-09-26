@@ -248,12 +248,13 @@ export const themeConfig = {
     social: [
       {
         icon: "email",
-        link: "mailto:one@imsyy.top",
+        link: "mailto:xernhe@163.com",
       },
       {
         icon: "github",
-        link: "https://www.github.com/imsyy/",
+        link: "https://www.github.com/xernhe/",
       },
+      /*
       {
         icon: "telegram",
         link: "https://t.me/bottom_user",
@@ -270,6 +271,7 @@ export const themeConfig = {
         icon: "twitter-x",
         link: "https://twitter.com/iimmsyy",
       },
+      */
     ],
     // sitemap
     sitemap: [
@@ -282,6 +284,7 @@ export const themeConfig = {
           { text: "文章归档", link: "/pages/archives", newTab: true },
         ],
       },
+      /*
       {
         text: "项目",
         items: [
@@ -291,6 +294,7 @@ export const themeConfig = {
           { text: "Snavigation", link: "https://github.com/imsyy/Snavigation/", newTab: true },
         ],
       },
+      */
       {
         text: "专栏",
         items: [
@@ -423,7 +427,7 @@ export const themeConfig = {
   },
   // 外链中转
   jumpRedirect: {
-    enable: true,
+    enable: false,
     // 排除类名
     exclude: [
       "cf-friends-link",

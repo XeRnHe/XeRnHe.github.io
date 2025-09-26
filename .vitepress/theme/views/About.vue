@@ -5,8 +5,8 @@
       <!-- 介绍 -->
       <div class="about-item hello">
         <span class="text1">你好，很高兴认识你👋</span>
-        <span class="text2 title2">我是 無名</span>
-        <span class="text3">是一名 前端开发工程师、独立开发者、博主</span>
+        <span class="text2 title2">我是 XeRnHe</span>
+        <span class="text3">是一名 高三学生</span>
       </div>
       <!-- 追求 -->
       <div class="about-item pursuit">

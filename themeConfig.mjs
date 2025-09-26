@@ -3,7 +3,7 @@ export const themeConfig = {
   // 站点信息
   siteMeta: {
     // 站点标题
-    title: "XeRnHe's Blog",
+    title: "XeRnHe的赛博笔记",
     // 站点描述
     description: "分享一些想法",
     // 站点logo

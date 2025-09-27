@@ -58,6 +58,12 @@ const linkData = [
         desc: "一站式集结 LZRAY 的实验项目与独立工具",
         url: "https://www.lzray.com",
       },
+      {
+        name: "CyanTachyon's Blog",
+        avatar: "https://pic.efefee.cn/uploads/2024/02/02/65bc526a940e3.png",
+        desc: "CyanTachyon的个人博客",
+        url: "https://www.tachyon.moe",
+      },
     ],
   },
 ];

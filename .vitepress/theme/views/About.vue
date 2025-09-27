@@ -10,48 +10,10 @@
       </div>
       <!-- 追求 -->
       <div class="about-item pursuit">
-        <!-- <span class="tip">追求</span> -->
+        <span class="tip">尽量做到</span>
         <!-- <span class="title2">源于</span> -->
         <span class="title2">不以物喜，</span>
         <span class="title2">不以己悲。</span>
-      </div>
-    </div>
-    <div class="about-content" style="grid-template-columns: 2fr 3fr">
-      <!-- 技能 -->
-      <div class="about-item skills">
-        <span class="tip">技能</span>
-        <span class="title2">开启创造力</span>
-        <div class="skills-list">
-          <a
-            v-for="(item, index) in skillsData"
-            :key="index"
-            :style="{ '--color': item.color }"
-            :href="item.link"
-            class="skills-item"
-            target="_blank"
-          >
-            <div class="skills-logo">
-              <i :class="`iconfont icon-${item.icon}`"></i>
-            </div>
-            <span class="skills-name">{{ item.name }}</span>
-          </a>
-        </div>
-      </div>
-      <!-- 生涯 -->
-      <div class="about-item career">
-        <span class="tip">生涯</span>
-        <span class="title2">
-          <i>無限進步</i>
-        </span>
-        <div class="list">
-          <span class="list-item" style="--color: #357ef5">ZZRVTC · 计算机应用技术</span>
-          <span class="list-item" style="--color: #eb372a">FE · 前端开发工程师</span>
-        </div>
-        <img
-          class="career-img"
-          src="https://pic.efefee.cn/uploads/2024/02/22/65d71db18bcf9.png"
-          alt="career"
-        />
       </div>
     </div>
     <div class="about-content" style="grid-template-columns: 3fr 2fr">
@@ -109,51 +71,6 @@
           <span class="title2">数理化</span>
           <div class="image-desc">
             <span class="left">有点偏科</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="about-content" style="grid-template-columns: 2fr 3fr">
-      <!-- 数据 -->
-      <div
-        class="about-item static image"
-        style="
-          --color: #0f1114;
-          background-image: url(https://pic.efefee.cn/uploads/2024/04/15/661c8fbf226d3.webp);
-        "
-      >
-        <div class="image-content">
-          <span class="tip">数据</span>
-          <span class="title2">访问统计</span>
-          <div class="static-data">
-            <div v-for="(item, key, index) in statisticsData" :key="index" class="static-item">
-              <span class="static-name">{{ key }}</span>
-              <span class="static-num">{{ item }}</span>
-            </div>
-          </div>
-          <div class="image-desc opacity">
-            <span class="left">
-              统计信息来自 <a href="https://v6.51.la/" target="_blank">51la</a>
-            </span>
-          </div>
-        </div>
-      </div>
-      <!-- 信息 -->
-      <div class="about-item child">
-        <div
-          class="about-item map image"
-          style="background-image: url(https://pic.efefee.cn/uploads/2024/04/15/661cbccc56af5.webp)"
-        >
-          <span class="position">我现在住在 <strong>中国，河南省</strong></span>
-        </div>
-        <div class="about-item info">
-          <div class="info-item">
-            <span class="info-name">生于</span>
-            <span class="info-num" style="--color: #43a6c6">2001</span>
-          </div>
-          <div class="info-item">
-            <span class="info-name">现在职业</span>
-            <span class="info-num" style="--color: #dfac46">前端开发工程师</span>
           </div>
         </div>
       </div>

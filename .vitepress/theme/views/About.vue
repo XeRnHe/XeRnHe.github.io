@@ -12,11 +12,10 @@
       <div class="about-item pursuit">
         <!-- <span class="tip">追求</span> -->
         <!-- <span class="title2">源于</span> -->
-        <span class="title2">不以物喜</span>
-        <span class="title2">不以己悲</span>
+        <span class="title2">不以物喜，</span>
+        <span class="title2">不以己悲。</span>
       </div>
     </div>
-    <!--
     <div class="about-content" style="grid-template-columns: 2fr 3fr">
       <!-- 技能 -->
       <div class="about-item skills">
@@ -55,7 +54,6 @@
         />
       </div>
     </div>
-    -->
     <div class="about-content" style="grid-template-columns: 3fr 2fr">
       <!-- 性格 -->
       <div class="about-item character" style="--color: #4298b4">
@@ -115,7 +113,6 @@
         </div>
       </div>
     </div>
-    <!--
     <div class="about-content" style="grid-template-columns: 2fr 3fr">
       <!-- 数据 -->
       <div
@@ -161,7 +158,6 @@
         </div>
       </div>
     </div>
-    -->
     <!-- 心路历程 -->
     <div class="about-content" style="display: flex">
       <div class="about-item">

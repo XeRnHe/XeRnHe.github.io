@@ -7,7 +7,7 @@ export const themeConfig = {
     // 站点描述
     description: "分享一些想法",
     // 站点logo
-    logo: "/images/logo/logo.webp",
+    logo: "/images/logo/logo.webp", 
     // 站点地址
     site: "https://blog.xernhe.com",
     // 语言
@@ -15,7 +15,7 @@ export const themeConfig = {
     // 作者
     author: {
       name: "XeRnHe",
-      cover: "/images/logo/logo.webp",
+      cover: "/images/logo/logo.webp",       //改
       email: "xernhe@163.com",
       link: "https://blog.xernhe.com",
     },
@@ -166,22 +166,22 @@ export const themeConfig = {
       name: "学习工具",
       list: [
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/6613465358077.png",
+          icon: "https://pic.efefee.cn/uploads/2024/04/08/6613465358077.png",       //改
           name: "语雀通知",
           url: "https://pdofpkuschool.yuque.com/abldpf/vn44mp",
         },
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/661346d418ad7.png",
+          icon: "https://pic.efefee.cn/uploads/2024/04/08/661346d418ad7.png",       //改
           name: "新能源平台",
           url: "https://bdfz.xnykcxt.com:5002/stu/",
         },
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/66134722586fa.png",
+          icon: "https://pic.efefee.cn/uploads/2024/04/08/66134722586fa.png",       //改
           name: "希悦校园",
           url: "https://chalk-c3.seiue.com",
         },
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/66134722586fa.png",
+          icon: "https://pic.efefee.cn/uploads/2024/04/08/66134722586fa.png",       //改
           name: "SubQuiz",
           url: "https://quiz.bdfzscc.com",
         },
@@ -285,9 +285,9 @@ export const themeConfig = {
           { text: "文章归档", link: "/pages/archives", newTab: true },
         ],
       },
-      /*
+      /*       //改
       {
-        text: "项目",
+        text: "项目",       //改
         items: [
           { text: "Home", link: "https://github.com/imsyy/home/", newTab: true },
           { text: "SPlayer", link: "https://github.com/imsyy/SPlayer/", newTab: true },
@@ -297,7 +297,7 @@ export const themeConfig = {
       },
       */
       {
-        text: "专栏",
+        text: "专栏",       //改
         items: [
           { text: "技术分享", link: "/pages/categories/技术分享" },
           { text: "我的项目", link: "/pages/project" },
@@ -305,7 +305,7 @@ export const themeConfig = {
         ],
       },
       {
-        text: "页面",
+        text: "页面",       //改
         items: [
           { text: "畅所欲言", link: "/pages/message" },
           { text: "关于本站", link: "/pages/about" },
@@ -314,7 +314,7 @@ export const themeConfig = {
         ],
       },
       {
-        text: "友链",
+        text: "友链",       //改
         items: [
           { text: "站点状态", link: "https://status.imsyy.top/", newTab: true },
           { text: "一个导航", link: "https://nav.imsyy.top/", newTab: true },

@@ -131,15 +131,16 @@ export const themeConfig = {
     {
       text: "友链",
       items: [
-        { text: "友链鱼塘", link: "/pages/friends", icon: "fish" },
+        //{ text: "友链鱼塘", link: "/pages/friends", icon: "fish" },
         { text: "友情链接", link: "/pages/link", icon: "people" },
+        { text: "致谢名单", link: "/pages/thanks", icon: "reward" },
       ],
     },
     {
       text: "我的",
       items: [
         { text: "畅所欲言", link: "/pages/message", icon: "chat" },
-        { text: "致谢名单", link: "/pages/thanks", icon: "reward" },
+        //{ text: "致谢名单", link: "/pages/thanks", icon: "reward" },
         { text: "关于本站", link: "/pages/about", icon: "contacts" },
       ],
     },

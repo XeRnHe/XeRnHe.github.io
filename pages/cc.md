@@ -58,4 +58,4 @@ card: true
 
 ## 网站源代码协议
 
-目前站点主题尚未开发完成，开发完成后将会在 `GitHub` 开源，采用 `AGPL` 协议。
+使用了 **無名** 大佬的 [curve 主题](https://github.com/imsyy/vitepress-theme-curve)，在此感谢。

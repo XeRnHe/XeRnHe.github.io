@@ -330,7 +330,7 @@ export const themeConfig = {
   },
   // 评论
   comment: {
-    enable: false,
+    enable: true,
     // 评论系统选择
     // artalk / twikoo
     type: "artalk",
@@ -378,7 +378,7 @@ export const themeConfig = {
     },
     // 站点数据
     siteData: {
-      enable: true,
+      enable: false,
     },
   },
   // 友链

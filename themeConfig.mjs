@@ -319,7 +319,7 @@ export const themeConfig = {
           { text: "致谢名单", link: "/pages/thanks" },
           { text: "LZRAY", link: "https://www.lzray.com", newTab: true },
           { text: "Tachyon", link: "https://www.tachyon.moe", newTab: true },
-          { text: "", link: "/pages/link" },
+          { text: "更多", link: "/pages/link" },
         ],
       },
     ],

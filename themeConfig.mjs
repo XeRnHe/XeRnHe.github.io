@@ -316,10 +316,10 @@ export const themeConfig = {
       {
         text: "友链",       //改
         items: [
-          { text: "致谢名单", link: "/pages/thanks" },
           { text: "LZRAY", link: "https://www.lzray.com", newTab: true },
           { text: "Tachyon", link: "https://www.tachyon.moe", newTab: true },
           { text: "更多", link: "/pages/link" },
+          { text: "致谢名单", link: "/pages/thanks" },
         ],
       },
     ],

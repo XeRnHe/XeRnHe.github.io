@@ -21,25 +21,23 @@ import Link from "@/views/Link.vue";
 
 ### 我的友链信息
 
-- 名称：`無名小栈`
-- 描述：`分享技术与科技生活`
-- 地址：`https://blog.imsyy.top/`
+- 名称：`XeRnHe的赛博笔记`
+- 描述：`记录灵感与想法`
+- 地址：`https://blog.xernhe.com/`
 - 头像：`https://pic.imgdb.cn/item/65bc52b0871b83018a06699d.png`
 - 站点图片：`https://pic.imgdb.cn/item/65dc47009f345e8d030b65ba.png`
-- 订阅：`https://blog.imsyy.top/rss.xml`
 
 ```yml
-name: 無名小栈
-desc: 分享技术与科技生活
-url: https://blog.imsyy.top/
+name: XeRnHe的赛博笔记
+desc: 记录灵感与想法
+url: https://blog.xernhe.com/
 avatar: https://pic.imgdb.cn/item/65bc52b0871b83018a06699d.png
 screenshot: https://pic.imgdb.cn/item/65dc47009f345e8d030b65ba.png
-rss: https://blog.imsyy.top/rss.xml
 ```
 
 ### 申请友链
 
-- 我已添加 [無名小栈](https://blog.imsyy.top/) 的友情链接。
+- 我已添加 [XeRnHe的赛博笔记](https://blog.xernhe.com/) 的友情链接。
 - **请多多进行互动后再来进行友链添加**，若为首次评论直接申请友链，将不会通过。
 - 本站不添加 **采集站**、**纯搬运站点**、**论坛类站点** 等非 **个人博客** 类型的站点。
 - 站点目前可以在 **中国大陆区域** 正常访问。

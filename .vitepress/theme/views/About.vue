@@ -16,33 +16,6 @@
         <span class="title2">不以己悲。</span>
       </div>
     </div>
-    <div class="about-content" style="grid-template-columns: 3fr 2fr">
-      <!-- 性格 -->
-      <div class="about-item character" style="--color: #4298b4">
-        <span class="tip">性格</span>
-        <span class="title2">调停者</span>
-        <span class="title2" style="color: var(--color)">INFP</span>
-        <span class="more">
-          在
-          <a href="https://www.16personalities.com/ch/" target="_blank">16personalities</a>
-          了解更多关于
-          <a href="https://www.16personalities.com/ch/infp-人格" target="_blank">
-            调停者
-          </a>
-        </span>
-        <img
-          src="https://pic.efefee.cn/uploads/2024/02/22/65d6bc7ae72ae.png"
-          alt="male"
-          class="male"
-        />
-      </div>
-      <!-- 座右铭 -->
-      <div class="about-item">
-        <span class="tip">座右铭</span>
-        <span class="title1" style="margin-top: 20px">藏器于身，</span>
-        <span class="title2">待时而动。</span>
-      </div>
-    </div>
     <div class="about-content" style="grid-template-columns: 1fr 1fr">
       <div
         class="about-item like image"
@@ -73,6 +46,33 @@
             <span class="left">有点偏科</span>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="about-content" style="grid-template-columns: 3fr 2fr">
+      <!-- 性格 -->
+      <div class="about-item character" style="--color: #4298b4">
+        <span class="tip">性格</span>
+        <span class="title2">调停者</span>
+        <span class="title2" style="color: var(--color)">INFP</span>
+        <span class="more">
+          在
+          <a href="https://www.16personalities.com/ch/" target="_blank">16personalities</a>
+          了解更多关于
+          <a href="https://www.16personalities.com/ch/infp-人格" target="_blank">
+            调停者
+          </a>
+        </span>
+        <img
+          src="https://pic.efefee.cn/uploads/2024/02/22/65d6bc7ae72ae.png"
+          alt="male"
+          class="male"
+        />
+      </div>
+      <!-- 座右铭 -->
+      <div class="about-item">
+        <span class="tip">座右铭</span>
+        <span class="title1" style="margin-top: 20px">藏器于身，</span>
+        <span class="title2">待时而动。</span>
       </div>
     </div>
     <!-- 心路历程 -->

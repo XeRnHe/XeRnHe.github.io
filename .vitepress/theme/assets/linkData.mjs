@@ -53,7 +53,7 @@ const linkData = [
     typeDesc: "Orz",
     typeList: [
       {
-        name: "LZRAY·主站|Hub",
+        name: "LZRAY·主站 | Hub",
         avatar: "https://pic.efefee.cn/uploads/2024/02/02/65bc526a940e3.png",
         desc: "一站式集结 LZRAY 的实验项目与独立工具",
         url: "https://www.lzray.com",
@@ -61,11 +61,10 @@ const linkData = [
       {
         name: "CyanTachyon's Blog",
         avatar: "https://pic.efefee.cn/uploads/2024/02/02/65bc526a940e3.png",
-        desc: "CyanTachyon个人博客",
+        desc: "CyanTachyon       的个人博客",
         url: "https://www.tachyon.moe",
       },
     ],
   },
 ];
-
 export default linkData;

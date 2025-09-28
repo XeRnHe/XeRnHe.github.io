@@ -166,7 +166,7 @@ export const themeConfig = {
       name: "学习工具",
       list: [
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/6613465358077.png",       //改
+          icon: "https://xernhe.oss-cn-beijing.aliyuncs.com/img/20250928230902.png",       //改
           name: "语雀通知",
           url: "https://pdofpkuschool.yuque.com/abldpf/vn44mp",
         },

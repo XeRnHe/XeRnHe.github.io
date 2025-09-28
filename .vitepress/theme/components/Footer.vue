@@ -19,10 +19,6 @@
         <a class="theme link" href="https://github.com/imsyy/vitepress-theme-curve" target="_blank">
           <span class="name">主题</span>
         </a>
-        <a class="rss link" href="https://blog.imsyy.top/rss.xml" target="_blank">
-          <i class="iconfont icon-rss" />
-          <span class="name">订阅</span>
-        </a>
         <a
           class="cc link"
           href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans"

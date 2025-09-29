@@ -54,7 +54,7 @@ const linkData = [
     typeList: [
       {
         name: "LZRAY·主站 | Hub",
-        avatar: "https://pic.efefee.cn/uploads/2024/02/02/65bc526a940e3.png",
+        avatar: "https://pic1.imgdb.cn/item/68d756a7c5157e1a88395de4.jpg",
         desc: "一站式集结 LZRAY 的实验项目与独立工具",
         url: "https://www.lzray.com",
       },

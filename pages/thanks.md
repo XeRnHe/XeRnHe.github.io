@@ -9,11 +9,11 @@ comment: true
 <div class="payment-container">  
   <div class="payment-item">  
     <p class="payment-label">微信 / Wechat</p>  
-    <img class="payment-image" src="/" alt="wechat receipt code" />  
+    <img class="payment-image" src="https://cdn.luogu.com.cn/upload/image_hosting/9v3y7d9e.png" alt="wechat receipt code" />  
   </div>  
   <div class="payment-item">  
     <p class="payment-label">支付宝 / Alipay</p>  
-    <img class="payment-image" src="/" alt="alipay receipt code" />  
+    <img class="payment-image" src="https://cdn.luogu.com.cn/upload/image_hosting/9v3y7d9e.png" alt="alipay receipt code" />  
   </div>  
 </div>  
   

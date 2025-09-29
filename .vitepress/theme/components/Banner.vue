@@ -3,8 +3,8 @@
     <h1 class="title">你好，欢迎来到{{ theme.siteMeta.title }}</h1>
     <div class="subtitle">
       <Transition name="fade" mode="out-in">
-        <span :key="hitokotoData?.hitokoto" class="text">
-          {{ hitokotoData?.hitokoto ? hitokotoData?.hitokoto : theme.siteMeta.description }}
+        <span :key="displayText" class="text" @click="toggleHitokoto">
+          {{ displayText }}
         </span>
       </Transition>
     </div>
@@ -41,95 +41,136 @@
 </template>
 
 <script setup>
-import { mainStore } from "@/store";
-import { getHitokoto } from "@/api";
+import { mainStore } from '@/store';
+import { getHitokoto } from '@/api';
 
 const store = mainStore();
 const { theme } = useData();
+
 const props = defineProps({
-  // 类型
-  type: {
-    type: String,
-    default: "text",
-  },
-  // 高度
-  height: {
-    type: String,
-    default: "half",
-  },
-  // 标题
-  title: {
-    type: String,
-    default: "这里是标题",
-  },
-  // 简介
-  desc: {
-    type: String,
-    default: "这里是简介",
-  },
-  // 注释
-  footer: {
-    type: String,
-    default: "",
-  },
-  // 背景
-  image: {
-    type: String,
-    default: "",
-  },
+  type: { type: String, default: 'text' },
+  height: { type: String, default: 'half' },
+  title: { type: String, default: '这里是标题' },
+  desc: { type: String, default: '这里是简介' },
+  footer: { type: String, default: '' },
+  image: { type: String, default: '' },
 });
 
-const hitokotoData = ref(null);
-const hitokotoTimeOut = ref(null);
+// 存储一言数据和状态
+const hitokotoData = ref({ hitokoto: '', from: '', from_who: '' });
+const isHitokotoDisplayed = ref(false);
 
-// banner
-const bannerType = ref(null);
+// 自动轮询相关
+const hitokotoInitialTimeout = ref(null);
+const autoSwitchInterval = ref(null);
+const autoSwitchActive = ref(false);
 
-// 获取一言数据
-const getHitokotoData = async () => {
-  try {
-    const result = await getHitokoto();
-    const { hitokoto, from, from_who } = result;
-    hitokotoData.value = { hitokoto, from, from_who };
-  } catch (error) {
-    $message.error("一言获取失败");
-    console.error("一言获取失败：", error);
-  }
-};
+// 是否已经手动点击过一次，停止自动并锁定手动模式
+const disableAuto = ref(false);
 
-// 滚动至首页
-const scrollToHome = () => {
-  const bannerDom = document.getElementById("main-banner");
-  if (!bannerDom) return false;
-  scrollTo({
-    top: bannerDom.offsetHeight,
-    behavior: "smooth",
-  });
-};
+// 默认标语
+const defaultSlogan = theme.value.siteMeta.description;
 
-watch(
-  () => store.bannerType,
-  (val) => {
-    bannerType.value = val;
-  },
+// 计算展示的文字：若当前为“一言”状态则显示一言，否则显示默认标语
+const displayText = computed(() =>
+  isHitokotoDisplayed.value && hitokotoData.value.hitokoto
+    ? hitokotoData.value.hitokoto
+    : defaultSlogan
 );
 
-onMounted(() => {
-  if (props.type === "text") {
-    hitokotoTimeOut.value = setTimeout(() => {
-      getHitokotoData();
-    }, 2000);
+// 点击处理：
+// 1. 若当前仍在自动模式，第一次点击会停止自动、显示默认标语
+// 2. 之后的点击均为手动获取新一言
+async function toggleHitokoto() {
+  if (!disableAuto.value && autoSwitchActive.value) {
+    // 第一次点击：关闭自动、显示默认
+    pauseHitokotoCycle();
+    disableAuto.value = true;
+    isHitokotoDisplayed.value = false;
+    return;
   }
-  // 更改 banner 类型
-  bannerType.value = store.bannerType;
+  // 手动获取并显示一言
+  await fetchAndShowHitokoto();
+}
+
+// 真正执行一次请求并显示结果
+async function fetchAndShowHitokoto() {
+  try {
+    const result = await getHitokoto();
+    hitokotoData.value = {
+      hitokoto: result.hitokoto,
+      from: result.from,
+      from_who: result.from_who
+    };
+    isHitokotoDisplayed.value = true;
+  } catch (err) {
+    console.error('一言获取失败：', err);
+  }
+}
+
+// 自动轮询执行
+async function autoToggleHitokoto() {
+  await fetchAndShowHitokoto();
+}
+
+// 启动首次延迟 + 后续自动轮询
+function startHitokotoCycle() {
+  if (disableAuto.value) return;
+  hitokotoInitialTimeout.value = setTimeout(async () => {
+    await fetchAndShowHitokoto();
+    autoSwitchInterval.value = setInterval(autoToggleHitokoto, 7000);
+    autoSwitchActive.value = true;
+  }, 4000);
+}
+
+// 暂停所有定时/请求
+function pauseHitokotoCycle() {
+  if (hitokotoInitialTimeout.value) {
+    clearTimeout(hitokotoInitialTimeout.value);
+    hitokotoInitialTimeout.value = null;
+  }
+  if (autoSwitchInterval.value) {
+    clearInterval(autoSwitchInterval.value);
+    autoSwitchInterval.value = null;
+  }
+  autoSwitchActive.value = false;
+}
+
+// Page Visibility API：切换标签页时暂停，切回时（若未手动禁用）恢复
+function handleVisibilityChange() {
+  if (document.hidden) {
+    pauseHitokotoCycle();
+  } else if (!disableAuto.value && !autoSwitchActive.value && !hitokotoInitialTimeout.value) {
+    startHitokotoCycle();
+  }
+}
+
+// 滚动至首页
+function scrollToHome() {
+  const bannerDom = document.getElementById('main-banner');
+  if (!bannerDom) return;
+  scrollTo({ top: bannerDom.offsetHeight, behavior: 'smooth' });
+}
+
+// 同步外部 store 的 bannerType
+const bannerType = ref(store.bannerType);
+watch(() => store.bannerType, val => (bannerType.value = val));
+
+onMounted(() => {
+  if (props.type === 'text') {
+    startHitokotoCycle();
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+  }
 });
 
 onBeforeUnmount(() => {
-  clearTimeout(hitokotoTimeOut.value);
+  pauseHitokotoCycle();
+  document.removeEventListener('visibilitychange', handleVisibilityChange);
 });
 </script>
 
 <style lang="scss" scoped>
+/* 样式保持不变 */
 .banner {
   height: 300px;
   display: flex;
@@ -158,15 +199,17 @@ onBeforeUnmount(() => {
     font-size: 1.25rem;
     opacity: 0.8;
     animation: fade-up-opacity 0.6s 0.1s backwards;
-    .text {
-      text-align: center;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-    }
+  .text {
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // WebKit 引擎兼容性
+    -webkit-box-orient: vertical; // WebKit 引擎兼容性
+
+    line-clamp: 2; // 标准的 line-clamp 属性，提高兼容性
   }
+}
   .icon-up {
     font-size: 20px;
     position: absolute;

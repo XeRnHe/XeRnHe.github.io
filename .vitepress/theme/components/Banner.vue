@@ -66,7 +66,7 @@ const autoSwitchInterval = ref(null);
 const autoSwitchActive = ref(false);
 
 // 是否已经手动点击过一次，停止自动并锁定手动模式
-const disableAuto = ref(false);
+const disableAuto = ref(true);
 
 // 默认标语
 const defaultSlogan = theme.value.siteMeta.description;

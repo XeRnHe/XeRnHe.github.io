@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>XeRnHe的赛博笔记</title>
+        <link>https://blog.xernhe.com</link>
+        <description>记录一些想法</description>
+        <lastBuildDate>Thu, 02 Oct 2025 15:55:01 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>XeRnHe</generator>
+        <language>zh</language>
+        <copyright>Copyright © 2020-present XeRnHe</copyright>
+        <item>
+            <title><![CDATA[模块总结 物质结构与性质]]></title>
+            <link>https://blog.xernhe.com/posts/25100201</link>
+            <guid>https://blog.xernhe.com/posts/25100201</guid>
+            <pubDate>Thu, 02 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[化学选必二学习笔记]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[选填赏析 25年北京高考数学第15题]]></title>
+            <link>https://blog.xernhe.com/posts/25092901</link>
+            <guid>https://blog.xernhe.com/posts/25092901</guid>
+            <pubDate>Mon, 29 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[2025年北京高考数学第15题]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[模块总结 直线运动]]></title>
+            <link>https://blog.xernhe.com/posts/25092902</link>
+            <guid>https://blog.xernhe.com/posts/25092902</guid>
+            <pubDate>Mon, 29 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[直线运动相关结论与错题记录]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[欢迎使用 Curve]]></title>
+            <link>https://blog.xernhe.com/posts/2024/1010</link>
+            <guid>https://blog.xernhe.com/posts/2024/1010</guid>
+            <pubDate>Thu, 10 Oct 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[欢迎使用 Curve 主题，这是你的第一篇文章]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+    </channel>
+</rss>

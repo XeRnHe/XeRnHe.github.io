@@ -166,22 +166,22 @@ export const themeConfig = {
       name: "学习工具",
       list: [
         {
-          icon: "https://xernhe.oss-cn-beijing.aliyuncs.com/img/20250928230902.png",       //改
+          icon: "https://xernhe.oss-cn-beijing.aliyuncs.com/img/20251009210838.png",       //改
           name: "语雀通知",
           url: "https://pdofpkuschool.yuque.com/abldpf/vn44mp",
         },
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/661346d418ad7.png",       //改
+          icon: "https://xernhe.oss-cn-beijing.aliyuncs.com/img/20251009210618.png",       //改
           name: "新能源平台",
           url: "https://bdfz.xnykcxt.com:5002/stu/",
         },
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/66134722586fa.png",       //改
+          icon: "https://xernhe.oss-cn-beijing.aliyuncs.com/img/20251009210302.png",       //改
           name: "希悦校园",
           url: "https://chalk-c3.seiue.com",
         },
         {
-          icon: "https://pic.efefee.cn/uploads/2024/04/08/66134722586fa.png",       //改
+          icon: "https://xernhe.oss-cn-beijing.aliyuncs.com/img/20251009211005.png",       //改
           name: "SubQuiz",
           url: "https://quiz.bdfzscc.com",
         },

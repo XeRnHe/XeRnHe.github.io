@@ -60,7 +60,7 @@ const linkData = [
       },
       {
         name: "CyanTachyon's Blog",
-        avatar: "https://pic.efefee.cn/uploads/2024/02/02/65bc526a940e3.png",
+        avatar: "https://xernhe.oss-cn-beijing.aliyuncs.com/img/20251009205505.png",
         desc: "CyanTachyon       的个人博客",
         url: "https://www.tachyon.moe",
       },

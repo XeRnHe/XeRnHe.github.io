@@ -9,11 +9,11 @@ comment: true
 <div class="payment-container">  
   <div class="payment-item">  
     <p class="payment-label">微信 / Wechat</p>  
-    <img class="payment-image" src="https://cdn.luogu.com.cn/upload/image_hosting/9v3y7d9e.png" alt="wechat receipt code" />  
+    <img class="payment-image" src="https://xernhe.oss-cn-beijing.aliyuncs.com/img/fe92c6cd1d6f253fe331d0c9281a04c4.jpg" alt="wechat receipt code" />  
   </div>  
   <div class="payment-item">  
     <p class="payment-label">支付宝 / Alipay</p>  
-    <img class="payment-image" src="https://cdn.luogu.com.cn/upload/image_hosting/9v3y7d9e.png" alt="alipay receipt code" />  
+    <img class="payment-image" src="https://xernhe.oss-cn-beijing.aliyuncs.com/img/35d2d0e775c02c8a1806edda1c54590a.jpg" alt="alipay receipt code" />  
   </div>  
 </div>  
   

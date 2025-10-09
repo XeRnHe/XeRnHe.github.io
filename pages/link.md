@@ -24,15 +24,15 @@ import Link from "@/views/Link.vue";
 - 名称：`XeRnHe的赛博笔记`
 - 描述：`记录灵感与想法`
 - 地址：`https://blog.xernhe.com/`
-- 头像：`https://pic.imgdb.cn/item/65bc52b0871b83018a06699d.png`
-- 站点图片：`https://pic.imgdb.cn/item/65dc47009f345e8d030b65ba.png`
+- 头像：`https://xernhe.oss-cn-beijing.aliyuncs.com/img/1bc451886928aa8aada360b46e0715e7.jpg`
+- 站点图片：`https://xernhe.oss-cn-beijing.aliyuncs.com/img/20251009210048.png`
 
 ```yml
 name: XeRnHe的赛博笔记
 desc: 记录灵感与想法
 url: https://blog.xernhe.com/
-avatar: https://pic.imgdb.cn/item/65bc52b0871b83018a06699d.png
-screenshot: https://pic.imgdb.cn/item/65dc47009f345e8d030b65ba.png
+avatar: https://xernhe.oss-cn-beijing.aliyuncs.com/img/1bc451886928aa8aada360b46e0715e7.jpg
+screenshot: https://xernhe.oss-cn-beijing.aliyuncs.com/img/20251009210048.png
 ```
 
 ### 申请友链

@@ -21,7 +21,7 @@
         class="about-item like image"
         style="
           --color: #0c0e20;
-          background-image: url(https://pic.efefee.cn/uploads/2024/02/27/65dd812567723.webp);
+          background-image: url(https://xernhe.oss-cn-beijing.aliyuncs.com/img/2a4fb3eba76423b85e977652f7b7c46d.jpg);
         "
       >
         <div class="image-content">
@@ -36,7 +36,7 @@
         class="about-item like image"
         style="
           --color: #7b3c25;
-          background-image: url(https://pic.efefee.cn/uploads/2024/02/27/65dd836099d16.webp);
+          background-image: url(https://xernhe.oss-cn-beijing.aliyuncs.com/img/20251009204811.png);
         "
       >
         <div class="image-content">
@@ -63,7 +63,7 @@
           </a>
         </span>
         <img
-          src="https://pic.efefee.cn/uploads/2024/02/22/65d6bc7ae72ae.png"
+          src="https://xernhe.oss-cn-beijing.aliyuncs.com/img/infp.png"
           alt="male"
           class="male"
         />

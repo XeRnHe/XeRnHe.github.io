@@ -412,9 +412,9 @@ export const themeConfig = {
   rewardData: {
     enable: true,
     // 微信二维码
-    wechat: "https://pic.efefee.cn/uploads/2024/04/07/66121049d1e80.webp",
+    wechat: "https://xernhe.oss-cn-beijing.aliyuncs.com/img/fe92c6cd1d6f253fe331d0c9281a04c4.jpg",
     // 支付宝二维码
-    alipay: "https://pic.efefee.cn/uploads/2024/04/07/661206631d3b5.webp",
+    alipay: "https://xernhe.oss-cn-beijing.aliyuncs.com/img/35d2d0e775c02c8a1806edda1c54590a.jpg",
   },
   // 图片灯箱
   fancybox: {

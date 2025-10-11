@@ -81,7 +81,7 @@
         <span class="tip">心路历程</span>
         <span class="title2">为什么建站？</span>
         <p class="text">
-          当然是为了记录<strong>灵感</strong>和<strong>想法</strong>。
+          建站的目的主要有两个：一是为了整理我的笔记，二是为了记录我的灵感。
         </p>
       </div>
     </div>

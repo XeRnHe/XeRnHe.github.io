@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>XeRnHe的赛博笔记</title>
+        <link>https://blog.xernhe.com</link>
+        <description>记录一些想法</description>
+        <lastBuildDate>Sat, 01 Nov 2025 15:00:28 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>XeRnHe</generator>
+        <language>zh</language>
+        <copyright>Copyright © 2020-present XeRnHe</copyright>
+        <item>
+            <title><![CDATA[模块总结 遗传与进化]]></title>
+            <link>https://blog.xernhe.com/posts/25102901</link>
+            <guid>https://blog.xernhe.com/posts/25102901</guid>
+            <pubDate>Wed, 29 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[生物必修二 遗传与进化]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[范文积累 北京一日游]]></title>
+            <link>https://blog.xernhe.com/posts/25102301</link>
+            <guid>https://blog.xernhe.com/posts/25102301</guid>
+            <pubDate>Thu, 23 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[24年海淀区高三上期中作文题目]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[考试反思 10月月考化学]]></title>
+            <link>https://blog.xernhe.com/posts/25101501</link>
+            <guid>https://blog.xernhe.com/posts/25101501</guid>
+            <pubDate>Wed, 15 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[含部分知识点总结]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[考试反思 10月月考数学]]></title>
+            <link>https://blog.xernhe.com/posts/25101301</link>
+            <guid>https://blog.xernhe.com/posts/25101301</guid>
+            <pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[含部分题目解析]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[王国维的治学三境界]]></title>
+            <link>https://blog.xernhe.com/posts/25101101</link>
+            <guid>https://blog.xernhe.com/posts/25101101</guid>
+            <pubDate>Sat, 11 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[转载自山西省忻州市第五中学王振国的文章]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[中国古代文人的风骨与气节]]></title>
+            <link>https://blog.xernhe.com/posts/25101102</link>
+            <guid>https://blog.xernhe.com/posts/25101102</guid>
+            <pubDate>Sat, 11 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[转载自中国作家网刘金祥的文章]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[25年10月11日记]]></title>
+            <link>https://blog.xernhe.com/posts/25101103</link>
+            <guid>https://blog.xernhe.com/posts/25101103</guid>
+            <pubDate>Sat, 11 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[关于建站的原因]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[模块总结 物质结构与性质]]></title>
+            <link>https://blog.xernhe.com/posts/25100201</link>
+            <guid>https://blog.xernhe.com/posts/25100201</guid>
+            <pubDate>Thu, 02 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[化学选必二学习笔记]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[选填赏析 25年北京高考数学第15题]]></title>
+            <link>https://blog.xernhe.com/posts/25092901</link>
+            <guid>https://blog.xernhe.com/posts/25092901</guid>
+            <pubDate>Mon, 29 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[2025年北京高考数学第15题]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[模块总结 直线运动]]></title>
+            <link>https://blog.xernhe.com/posts/25092902</link>
+            <guid>https://blog.xernhe.com/posts/25092902</guid>
+            <pubDate>Mon, 29 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[直线运动相关结论与错题记录]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+    </channel>
+</rss>

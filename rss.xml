@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>XeRnHe的赛博笔记</title>
+        <link>https://blog.xernhe.com</link>
+        <description>记录一些想法</description>
+        <lastBuildDate>Fri, 19 Dec 2025 14:00:25 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>XeRnHe</generator>
+        <language>zh</language>
+        <copyright>Copyright © 2020-present XeRnHe</copyright>
+        <item>
+            <title><![CDATA[答题技巧 物理大题]]></title>
+            <link>https://blog.xernhe.com/posts/25121401</link>
+            <guid>https://blog.xernhe.com/posts/25121401</guid>
+            <pubDate>Sun, 14 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[物理大题易错点]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[模块总结 分子与细胞]]></title>
+            <link>https://blog.xernhe.com/posts/25112801</link>
+            <guid>https://blog.xernhe.com/posts/25112801</guid>
+            <pubDate>Fri, 28 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[生物必修一 分子与细胞]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[模块总结 生物技术与工程]]></title>
+            <link>https://blog.xernhe.com/posts/25112802</link>
+            <guid>https://blog.xernhe.com/posts/25112802</guid>
+            <pubDate>Fri, 28 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[生物选择性必修三 生物技术与工程]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[模块总结 生物与环境]]></title>
+            <link>https://blog.xernhe.com/posts/25112803</link>
+            <guid>https://blog.xernhe.com/posts/25112803</guid>
+            <pubDate>Fri, 28 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[生物选择性必修二 生物与环境]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[答题规范 生物大题]]></title>
+            <link>https://blog.xernhe.com/posts/25111301</link>
+            <guid>https://blog.xernhe.com/posts/25111301</guid>
+            <pubDate>Thu, 13 Nov 2025 00:00:00 GMT</pubDate>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[考试反思 25年海淀区高三第一学期期中生物]]></title>
+            <link>https://blog.xernhe.com/posts/25111102</link>
+            <guid>https://blog.xernhe.com/posts/25111102</guid>
+            <pubDate>Tue, 11 Nov 2025 00:00:00 GMT</pubDate>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[考试反思 25年海淀区高三第一学期期中化学]]></title>
+            <link>https://blog.xernhe.com/posts/25111001</link>
+            <guid>https://blog.xernhe.com/posts/25111001</guid>
+            <pubDate>Mon, 10 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[含部分知识点总结]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[模块总结 稳态与调节]]></title>
+            <link>https://blog.xernhe.com/posts/25110501</link>
+            <guid>https://blog.xernhe.com/posts/25110501</guid>
+            <pubDate>Wed, 05 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[生物选择性必修一 稳态与调节]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[模块总结 遗传与进化]]></title>
+            <link>https://blog.xernhe.com/posts/25102901</link>
+            <guid>https://blog.xernhe.com/posts/25102901</guid>
+            <pubDate>Wed, 29 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[生物必修二 遗传与进化]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+        <item>
+            <title><![CDATA[考试反思 10月月考化学]]></title>
+            <link>https://blog.xernhe.com/posts/25101501</link>
+            <guid>https://blog.xernhe.com/posts/25101501</guid>
+            <pubDate>Wed, 15 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[含部分知识点总结]]></description>
+            <author>xernhe@163.com (XeRnHe)</author>
+        </item>
+    </channel>
+</rss>

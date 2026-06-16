@@ -358,8 +358,8 @@ export const themeConfig = {
       enable: true,
       // 倒计时日期
       data: {
-        name: "高考",
-        date: "2026-06-07",
+        name: "开学",
+        date: "2026-09-01",
       },
     },
     // 站点数据

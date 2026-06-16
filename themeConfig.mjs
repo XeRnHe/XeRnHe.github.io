@@ -163,27 +163,17 @@ export const themeConfig = {
       ],
     },*/
     {
-      name: "学习工具",
+      name: "百科",
       list: [
         {
-          icon: "https://xernhe.oss-cn-beijing.aliyuncs.com/img/20251009210838.png",       //改
-          name: "语雀通知",
-          url: "https://pdofpkuschool.yuque.com/abldpf/vn44mp",
+          icon: "https://obsidian.md/favicon.ico",       //改
+          name: "Obsidian教程",
+          url: "https://obsidian.md/zh/help/",
         },
         {
-          icon: "https://xernhe.oss-cn-beijing.aliyuncs.com/img/20251009210618.png",       //改
-          name: "新能源平台",
-          url: "https://bdfz.xnykcxt.com:5002/stu/",
-        },
-        {
-          icon: "https://xernhe.oss-cn-beijing.aliyuncs.com/img/20251009210302.png",       //改
-          name: "希悦校园",
-          url: "https://chalk-c3.seiue.com",
-        },
-        {
-          icon: "https://xernhe.oss-cn-beijing.aliyuncs.com/img/20251009211005.png",       //改
-          name: "SubQuiz",
-          url: "https://quiz.bdfzscc.com",
+          icon: "https://zh.moegirl.org.cn/favicon.ico",       //改
+          name: "萌娘百科",
+          url: "https://zh.moegirl.org.cn/Mainpage#/flow",
         },
       ],
     },

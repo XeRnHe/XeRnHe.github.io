@@ -172,7 +172,7 @@ export const themeConfig = {
         },
         {
           icon: "https://www.processon.com/favicon.ico",       //改
-          name: "LaTeX符号大全",
+          name: "LaTeX语法",
           url: "https://www.processon.com/latex-symbol#_17",
         },
         {

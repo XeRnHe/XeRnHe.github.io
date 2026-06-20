@@ -171,6 +171,11 @@ export const themeConfig = {
           url: "https://obsidian.md/zh/help/",
         },
         {
+          icon: "https://www.processon.com/favicon.ico",       //改
+          name: "LaTeX符号大全",
+          url: "https://www.processon.com/latex-symbol#_17",
+        },
+        {
           icon: "https://zh.moegirl.org.cn/favicon.ico",       //改
           name: "萌娘百科",
           url: "https://zh.moegirl.org.cn/Mainpage#/flow",
